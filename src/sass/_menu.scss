@@ -1,0 +1,106 @@
+@import './variables';
+
+.body--scroll-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+
+.menu__mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  transform: translateX(100vw);
+
+  padding: 48px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: $backdrop-background;
+  backdrop-filter: blur(4px);
+
+  transition: transform $animation-menu;
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobile-menu--is-open {
+  transform: translateX(0);
+}
+
+.hamburger-checkbox {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 40px;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.hamburger-lines {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16px; //16px
+  width: 30px;
+  top: 16px;
+  right: 20px; //20px
+  z-index: 2;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--text-color);
+}
+
+.hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: $animation-menu;
+}
+
+.hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: $animation-menu;
+}
+
+input[type='checkbox']:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+input[type='checkbox']:checked ~ .hamburger-lines .line1 {
+  transform: translate(13px, 5px) rotate(45deg);
+  width: 23.4px;
+}
+
+input[type='checkbox']:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+input[type='checkbox']:checked ~ .hamburger-lines .line3 {
+  transform: translate(14px, 6px) rotate(-45deg);
+  width: 23.4px;
+}
