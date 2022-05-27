@@ -4,21 +4,6 @@
   --btn-bg-color: #ab816c;
   --primary-font: 'Montserrat';
   --secondary-font: 'Caveat Brush';
-  $backdrop-background: rgba(254, 243, 228, 0.9);
-  $animation-menu: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-$breakpoints: (
-  'mobile': 0,
-  'tablet': 480px,
-  'desktop': 768px,
-  'desktop-bg': 1200px,
-);
-
-@mixin desktop {
-  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
-    @content;
-  }
 }
 
 body {
