@@ -1,6 +1,6 @@
 .contact{
-    background-color: #E5E5E5;
-    min-width: 320PX;
+    background-color: #FFFFFF;
+    max-width: 320PX;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -29,10 +29,14 @@
 }
 .contact-form{
 
-    margin-bottom: 32px;
+   
+    &__mail{
+        margin-bottom: 32px;
+    }
     &__mail input{
         width: 280px;
-        border-bottom: 1px solid var(--btn-bg-color);
+        border: none;
+  
     }
     &__mail input::placeholder{
         font-family: 'Montserrat';
@@ -46,6 +50,10 @@
 }
 .contact-mail{
     margin-bottom: 20px;
+}
+
+.contact-form__button{
+    text-align: center;
 }
 
 .contact-button{
@@ -62,4 +70,5 @@
 
     background-color: var(--btn-bg-color);
     border-radius: 25px;
+    border: 1px solid var(--btn-bg-color);
 } 
