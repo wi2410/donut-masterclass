@@ -1,3 +1,27 @@
 .about {
     background-image: url(../images/about/coffee-donut.png);
+    background-repeat: no-repeat;
+    background-size: 279px;
+    background-position: 50% 0;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/about/coffee-donut@2x.png);
+        }
+
+    &__title {
+        padding-top: 303px;
+
+        font-family: 'Caveat Brush';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.25;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.25;
+    }
 }
