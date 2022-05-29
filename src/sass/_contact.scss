@@ -7,6 +7,13 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 768px){
+        max-width: 768px;
+}
+@media screen and (min-width: 1200px){
+    max-width: 1200px;
+}
 }
    
     &__title{
@@ -32,7 +39,7 @@
 }
 .contact-form{
 
-   
+   text-align: center;
  
     &__mail input{
         width: 280px;
@@ -40,11 +47,16 @@
         border-left: transparent;
         border-right: transparent;
         border-bottom: 1px solid var(--acent-color);
- 
-
-        
+      
+        @media screen and (min-width: 768px){
+            width: 336px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 394px;
+}
   
     }
+   
     &__mail input:hover,
     &__mail input:focus{
         border-bottom: 1px solid var(--hover-color);
@@ -93,6 +105,11 @@
    
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px){
+        width: 182px;
+        height: 45px;
+}
 } 
 .contact-button:hover{
     background-color: var( --hover-color);
