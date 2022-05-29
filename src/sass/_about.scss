@@ -12,6 +12,7 @@
 
     &__title {
         padding-top: 303px;
+        margin-bottom: 8px;
 
         font-family: 'Caveat Brush';
         font-weight: 400;
@@ -23,5 +24,42 @@
     &__text {
         font-size: 16px;
         line-height: 1.25;
+
+        &:not(:last-child) {
+            margin-bottom: revert;
+        }
     }
+
+    &__content {
+        display: none;
+    }
+
+    &__label {
+        display: inline-block;
+        margin-top: 16px;
+
+        font-family: 'Caveat Brush';
+        font-size: 18px;
+        line-height: 1.27;
+        color: var(--btn-bg-color);
+        cursor: pointer;
+    }
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .about__content {
+    display: block;
+}
+
+#check:checked ~ .about__label {
+    visibility: hidden;
+}
+
+#check:checked ~ .about__label:after {
+    content: 'Less';
+    display: block;
+    visibility: visible;
 }
