@@ -37,11 +37,12 @@
     &__label {
         display: inline-block;
         margin-top: 16px;
+        margin-bottom: 16px;
 
         font-family: 'Caveat Brush';
         font-size: 18px;
         line-height: 1.27;
-        color: var(--btn-bg-color);
+        color: var(--acent-color);
         cursor: pointer;
     }
 }
