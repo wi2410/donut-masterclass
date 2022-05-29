@@ -60,13 +60,32 @@
   background-color: var(--bg-color-form);
   border: 0 solid var(--bg-color-form);
   border-bottom: 1px solid var(--acent-color);
-    
+   
+  &:hover {
+      outline-style: none;
+      box-shadow: none;
+      border: 0 solid var(--bg-color-form);
+      border-bottom: 1px solid var(--acent-color);
+  }
+  
+  &:focus {
+    outline-style: none;
+    box-shadow: none;
+    border: 0 solid var(--bg-color-form);
+    border-bottom: 1px solid var(--acent-color);
+  }
 
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(171, 129, 108, 0.5);
   }
+
+  &:not(:placeholder-shown):required:invalid {
+    border-color: red;
+    background-color: rgb(251, 216, 216);
+  }
+  
 }
 
 .form__button {
@@ -80,4 +99,11 @@
   border-radius: 25px;
   background-color: var(--acent-color);
   cursor: pointer;
+  transition: background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--hover-color);
+    box-shadow: 0 10px 12px 0 rgba(122, 121, 121, 0.201), 0 17px 50px 0 rgba(140, 135, 135, 0.19);
+  }
+
 }
