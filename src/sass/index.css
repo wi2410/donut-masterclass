@@ -1,7 +1,9 @@
 :root {
   --text-color: #2e2520;
   --background-color: #fef3e4;
-  --btn-bg-color: #ab816c;
+  --acent-color: #ab816c;
+  --hover-color: #876655;
+  --bg-color-form: #FFFFF9;
   --primary-font: 'Montserrat';
   --secondary-font: 'Caveat Brush';
 }
@@ -25,6 +27,7 @@ ul {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -38,10 +41,111 @@ img {
   height: auto;
 }
 
+.logo__icon {
+  fill: var(--text-color);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8.2px 112px 0 112px;
+  width: 100%;
+  height: 44.08px;
+}
+
+.nav .nav__item {
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--text-color);
+  display: none;
+}
+
+.hero__title {
+  width: 100%;
+  padding: 0 48px;
+  margin-top: 30.72px;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.hero__subtitle {
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.hero__button {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 25px;
+  background-color: var(--acent-color);
+  cursor: pointer;
+  border: none;
+  padding: 8px 47px;
+  margin-top: 32px;
+}
+
+.hero__button:hover, .hero__button:focus {
+  background-color: var(--hover-color);
+}
+
+.hero-soc__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  cursor: pointer;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-soc__list .hero-soc__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.hero-soc__list .hero-soc__icon {
+  fill: var(--text-color);
+}
+
+.hero-soc__list .hero-soc__icon:hover, .hero-soc__list .hero-soc__icon:focus {
+  fill: var(--hover-color);
+}
+
+.hero-soc__list .hero-soc__link {
+  text-decoration: none;
+  list-style: none;
+}
+
 :root {
   --text-color: #2e2520;
   --background-color: #fef3e4;
-  --btn-bg-color: #ab816c;
+  --acent-color: #ab816c;
+  --hover-color: #876655;
+  --bg-color-form: #FFFFF9;
   --primary-font: 'Montserrat';
   --secondary-font: 'Caveat Brush';
 }
@@ -211,4 +315,3 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
           transform: translate(14px, 6px) rotate(-45deg);
   width: 23.4px;
 }
-/*# sourceMappingURL=index.css.map */
