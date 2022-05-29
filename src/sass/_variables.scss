@@ -1,8 +1,10 @@
 :root {
   --text-color: #2e2520;
+  --btn-text-color: #FFFFFF;
   --background-color: #fef3e4;
   --acent-color: #ab816c;
   --hover-color: #876655;
+  --actived-color: #674D40;
   --bg-color-form: #FFFFF9;
   --primary-font: 'Montserrat';
   --secondary-font: 'Caveat Brush';
@@ -14,4 +16,23 @@ body {
   color: var(--text-color);
   font-size: 18px;
   line-height: 1.2;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media screen and (min-width:320px) {
+    max-width: 320px;
+  }
+
+  @media screen and (min-width:768px) {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width:1280px) {
+    max-width: 1280px;
+    padding: 0 16px;
+  }
 }

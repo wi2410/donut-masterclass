@@ -234,6 +234,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
   width: 23.4px;
 }
 
+
 .about {
   background-image: url(../images/about/coffee-donut.png);
   background-repeat: no-repeat;
@@ -391,6 +392,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
   border-radius: 50%;
 }
 
+
 .registration {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -530,6 +532,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
           box-shadow: 0 10px 12px 0 rgba(122, 121, 121, 0.201), 0 17px 50px 0 rgba(140, 135, 135, 0.19);
 }
 
+
 .contact {
   background-color: #FFFFFF;
 }
@@ -542,6 +545,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
   margin-right: auto;
 }
 
+
 @media screen and (min-width: 768px) {
   .contact__container {
     max-width: 768px;
@@ -553,6 +557,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
     max-width: 1200px;
   }
 }
+
 
 .contact__title {
   font-family: var(--secondary-font);
@@ -576,9 +581,11 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
   text-align: center;
 }
 
+
 .contact-form {
   text-align: center;
 }
+
 
 .contact-form__mail input {
   width: 280px;
@@ -587,6 +594,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
   border-right: transparent;
   border-bottom: 1px solid var(--acent-color);
 }
+
 
 @media screen and (min-width: 768px) {
   .contact-form__mail input {
@@ -599,6 +607,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
     width: 394px;
   }
 }
+
 
 .contact-form__mail input:hover,
 .contact-form__mail input:focus {
@@ -677,12 +686,14 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 @media screen and (min-width: 1200px) {
   .contact-button {
     width: 182px;
     height: 45px;
   }
 }
+
 
 .contact-button:hover {
   background-color: var(--hover-color);
