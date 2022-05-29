@@ -56,9 +56,7 @@
 }
   
     }
-    &__mail input:required:valid {
-        border-bottom: green;
-      }
+   
     &__mail input:hover,
     &__mail input:focus{
         border-bottom: 1px solid var(--hover-color);

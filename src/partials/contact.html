@@ -7,11 +7,11 @@
             <div class="contact-form__mail">
                 <div class="contact-mail">
                     <label for="mail" class="contact-form__text"></label>
-                    <input type="email" name="mail" id="mail" placeholder="Email">
+                    <input type="email" name="mail" id="mail" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
                  </div>
                  <div class="contact-question">
                     <label for="question" class="contact-form__text"></label>
-                    <input type="text" name="question" id="question" placeholder="Type your question">
+                    <input type="text" name="question" id="question" placeholder="Type your question" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$"/>
                  </div>
                 <div class="contact-form__button">
                    <button type="submit" class="contact-button">Send</button>
