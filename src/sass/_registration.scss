@@ -1,24 +1,30 @@
 .registration {
   padding-bottom: 32px;
 
-  // align-items: center;
-  // margin: 0 auto;
-  // padding: 32px 8px;
-  // width: 280px;
-  // height: 466px;
-  // background: var(--bg-color-form);
-  // border-radius: 150px 150px 0 0;
-  // box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   @media screen and (min-width:768px) {
     position: relative;
-    padding-bottom: 78px;
+    padding: 78px 0;
+    margin: 0 auto;
+    max-width: 768px;
+
+    background-image: url(../images/registration/registration-donut.png), url(../images/registration/confetti.png);
+    background-repeat: no-repeat;
+    background-size: 255px, 345px;
+    background-position: -4% -18%, 490px 115px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+          background-image: url(../images/registration/registration-donut@2x.png), url(../images/registration/confetti@2x.png);
+      }
   }
+
+
 }
 
 .registration__border {
   text-align: center;
   align-items: center;
-  // margin-bottom: 32px;
   padding: 32px 8px;
   margin: 0 auto;
   max-width: 280px;
@@ -53,10 +59,11 @@
 
   @media screen and (min-width:768px) {
     position: absolute;
-    top: 0px;
-    margin-bottom: 45px;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+
+    line-height: 2.71;
   }
 }
 
@@ -88,6 +95,26 @@
     top: -8px;
     left: 0;
     max-width: 264px;
+
+    @media screen and (min-width: 768px) {
+      width: 180px;
+      transform: rotate(90deg);
+      top: 150px;
+        left: -110px;
+    }
+  }
+}
+
+.registration__info {
+  @media screen and (min-width: 768px) {
+    text-align: end;
+  }
+}
+
+.personal-info {
+  @media screen and (min-width: 768px) {
+    max-width: 237px;
+    text-align: left;
   }
 }
 
