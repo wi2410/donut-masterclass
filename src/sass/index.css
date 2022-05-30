@@ -41,6 +41,112 @@ img {
   height: auto;
 }
 
+.logo__icon {
+  fill: var(--text-color);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8.2px 112px 0 112px;
+  width: 100%;
+  height: 44.08px;
+  margin-bottom: 30.72px;
+}
+
+.nav__item {
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--text-color);
+  display: none;
+}
+
+.hero__img {
+  position: absolute;
+  z-index: -10;
+  left: -12px;
+  top: -51px;
+  width: 129.69px;
+  height: 164.52px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.hero__title {
+  width: 100%;
+  padding: 0 48px;
+  margin-bottom: 8px;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.hero__subtitle {
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.hero__button {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 25px;
+  background-color: var(--acent-color);
+  cursor: pointer;
+  border: none;
+  padding: 8px 47px;
+  margin-bottom: 40px;
+}
+
+.hero__button:hover, .hero__button:focus {
+  background-color: var(--hover-color);
+}
+
+.hero-soc__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5.34px;
+  cursor: pointer;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-soc__list .hero-soc__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.hero-soc__list .hero-soc__icon {
+  fill: var(--text-color);
+}
+
+.hero-soc__list .hero-soc__icon:hover, .hero-soc__list .hero-soc__icon:focus {
+  fill: var(--hover-color);
+}
+
 :root {
   --text-color: #2e2520;
   --background-color: #fef3e4;
@@ -701,3 +807,4 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*# sourceMappingURL=index.css.map */
+
