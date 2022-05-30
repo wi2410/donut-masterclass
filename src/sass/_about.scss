@@ -10,15 +10,35 @@
             background-image: url(../images/about/coffee-donut@2x.png);
         }
 
+        @media (min-width: 768px) {
+            max-width: 768px;
+            margin-right: auto;
+            margin-left: auto;
+            background-size: 336px;
+            background-position: left 30px top 0;
+        }
+
+    &__box {
+        @media (min-width: 768px) {
+            margin-left: auto;
+
+            width: 336px;
+        }
+    }
+
     &__title {
-        padding-top: 303px;
         margin-bottom: 8px;
 
         font-family: 'Caveat Brush';
         font-weight: 400;
         font-size: 24px;
         line-height: 1.25;
-        text-align: center;
+
+        @media (max-width: 767px) {
+            padding-top: 303px;
+
+            text-align: center;
+        }
     }
 
     &__text {
@@ -32,11 +52,11 @@
 
     &__content {
         display: none;
+        transition: transform 1250ms linear;
     }
 
     &__label {
         display: inline-block;
-        margin-top: 16px;
         margin-bottom: 16px;
 
         font-family: 'Caveat Brush';
@@ -44,6 +64,14 @@
         line-height: 1.27;
         color: var(--acent-color);
         cursor: pointer;
+
+        &:hover, &:focus {
+            color: var(--hover-color)
+        }
+
+        @media (min-width: 768px) {
+            margin-bottom: 88px;
+        }
     }
 }
 
