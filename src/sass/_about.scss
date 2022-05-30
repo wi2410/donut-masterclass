@@ -11,14 +11,18 @@
         }
 
         @media (min-width: 768px) {
-            background-position: right 30px;
+            max-width: 768px;
+            margin-right: auto;
+            margin-left: auto;
+            background-size: 336px;
+            background-position: left 30px top 0;
         }
 
     &__box {
         @media (min-width: 768px) {
             margin-left: auto;
 
-            width: 388px;
+            width: 336px;
         }
     }
 
@@ -63,6 +67,10 @@
 
         &:hover, &:focus {
             color: var(--hover-color)
+        }
+
+        @media (min-width: 768px) {
+            margin-bottom: 88px;
         }
     }
 }
