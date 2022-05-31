@@ -29,16 +29,17 @@
         }
     }
     @media screen and (min-width:1280px) {
-        background-image: url(../images/background-top.png);
+        background-image:url(../images/about/spoon.png),url(../images/background-top.png);
         background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: top;
+        background-size: 178px 421px, 100%;
+        background-position:0 501px, top;
         z-index: 20;
+
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-          background-image: url(../images/background-top@2x.png);
+          background-image: url(../images/about/spoon@2x.png),url(../images/background-top@2x.png);
         }
     }
 }
