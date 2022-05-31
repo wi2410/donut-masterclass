@@ -731,6 +731,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
   border-radius: 50%;
 }
 
+
 .rate__icon {
   margin-bottom: 9px;
 }
@@ -905,6 +906,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
   font-size: 14px;
   color: var(--acent-color);
 }
+
 
 .registration {
   -webkit-box-align: center;
@@ -1200,6 +1202,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
 }
 
 @media screen and (min-width: 1280px) {
+
   .contact-button {
     width: 182px;
     height: 45px;
@@ -1211,3 +1214,81 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
   -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
           box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
 }
+
+
+footer {
+  position: relative;
+}
+
+.social-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 32px;
+}
+
+.social-btns__button {
+  fill: var(--text-color);
+  margin-bottom: 32px;
+}
+
+.social-btns__button:not(:last-child) {
+  margin-right: 16px;
+}
+
+@media screen and (min-width: 1280px) {
+  .social-btns__button {
+    margin-bottom: 80px;
+  }
+}
+
+.footer-contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-contacts__item {
+  fill: var(--text-color);
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts__item--phone {
+    margin-left: 12px;
+  }
+  .footer-contacts__item--location {
+    margin-left: 426px;
+  }
+}
+
+.footer-img {
+  position: absolute;
+  width: 113px;
+  bottom: 0;
+  right: -30;
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-img {
+    width: 207px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-img {
+    width: 332px;
+    bottom: -20;
+  }
+}
+/*# sourceMappingURL=index.css.map */
