@@ -64,12 +64,14 @@ ul {
 }
 
 .header {
+  display: block;
   position: relative;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .header {
-    padding: 0;
+    display: block;
   }
 }
 
@@ -88,11 +90,11 @@ ul {
   .logo__icon {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    position: absolute;
+    position: relative;
     width: 96px;
     height: 47.81px;
-    left: 33px;
     margin-top: 35.58px;
+    left: calc(50% - 96px/2 - 304px);
     top: 1.3%;
     bottom: 96.96%;
     fill: var(--text-color);
@@ -122,11 +124,11 @@ ul {
 @media screen and (min-width: 768px) {
   .hero__img {
     position: absolute;
-    z-index: 0;
     width: 377.89px;
     height: 396px;
     left: 288px;
     top: -35px;
+    margin-bottom: 7px;
   }
 }
 
@@ -147,11 +149,12 @@ ul {
 
 @media screen and (min-width: 768px) {
   .hero__title {
-    position: absolute;
+    display: block;
+    position: relative;
     width: 224px;
     height: 76px;
-    left: 32px;
-    top: 99px;
+    left: -33px;
+    text-align: left;
     margin-bottom: 8px;
   }
 }
@@ -167,11 +170,11 @@ ul {
 
 @media screen and (min-width: 768px) {
   .hero__subtitle {
-    position: absolute;
+    position: relative;
     width: 169px;
     height: 20px;
-    left: 33px;
-    top: 183px;
+    text-align: left;
+    left: -33px;
     margin-bottom: 20px;
   }
 }
@@ -215,8 +218,9 @@ ul {
 
 @media screen and (min-width: 768px) {
   .hero__button {
-    left: 5px;
-    top: 223px;
+    position: relative;
+    left: 33px;
+    margin-bottom: 20px;
   }
 }
 
@@ -233,21 +237,23 @@ ul {
           justify-content: center;
 }
 
-.hero-soc__list .hero-soc__item:not(:last-child) {
-  margin-right: 16px;
-}
-
 @media screen and (min-width: 768px) {
-  .hero-soc__list .hero-soc__item {
+  .hero-soc__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     position: relative;
-    position: absolute;
-    margin-bottom: 20px;
-    top: 283px;
-    left: 33px;
+    left: -33px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
+}
+
+.hero-soc__list .hero-soc__item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .hero-soc__list .hero-soc__icon {
