@@ -7,18 +7,47 @@
     margin: 0 auto;
     max-width: 768px;
 
-    background-image: url(../images/registration/registration-donut.png), url(../images/registration/confetti.png);
+    background-image: url(../images/registration/registration-donut.png);
     background-repeat: no-repeat;
-    background-size: 255px, 345px;
-    background-position: -4% -18%, 490px 115px;
+    background-size: 255px;
+    background-position: -4% -18%;
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-          background-image: url(../images/registration/registration-donut@2x.png), url(../images/registration/confetti@2x.png);
-      }
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url(../images/registration/registration-donut@2x.png);
+    }
   }
 
+  @media screen and (min-width:1280px) {
+    padding-bottom: 160px;
+    max-width: 1280px;
+    background-position: 8% 15%;
+    background-size: 255px;
+  }
+}
+
+.background-confetti {
+  @media screen and (min-width:768px) {
+    background-image: url(../images/registration/confetti.png);
+    margin: 0 auto;
+    background-size: 345px;
+    background-repeat: no-repeat;
+    background-position: 116% 40%;
+    max-width: 768px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url(../images/registration/confetti@2x.png);
+    }
+  }
+
+  @media screen and (min-width:1280px) {
+    max-width: 1280px;
+    background-position: 99% 34%;
+    background-size: 544px;
+  }
 
 }
 
@@ -27,17 +56,23 @@
   align-items: center;
   padding: 32px 8px;
   margin: 0 auto;
-  max-width: 280px;
-  max-height: 466px;
+  width: 280px;
+  height: 466px;
   background: var(--bg-color-form);
   border-radius: 150px 150px 0 0;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
 
   @media screen and (min-width:768px) {
-    max-width: 704px;
-    max-height: 260px;
+    width: 704px;
+    height: 260px;
     border-radius: 150px;
     padding: 40px 60px 66px 60px;
+  }
+
+  @media screen and (min-width:1280px) {
+    width: 822px;
+    height: 260px;
+    padding: 53px 106px;
   }
 }
 
@@ -49,21 +84,33 @@
     align-items: center;
     justify-content: space-between;
   }
+
+    @media screen and (min-width:1280px) {
+      justify-content: normal;
+    }
+
 }
 
 .registration__title {
   font-family: var(--secondary-font);
+  font-weight: 400;
   font-size: 24px;
   line-height: 1.25;
   margin-bottom: 20px;
 
   @media screen and (min-width:768px) {
     position: absolute;
+    margin-bottom: 0;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
     line-height: 2.71;
+  }
+
+  @media screen and (min-width:1280px){
+    font-size: 36px;
+    line-height: 1.81;
   }
 }
 
@@ -72,6 +119,10 @@
   font-size: 18px;
   line-height: 1.22;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .registration__price {
@@ -81,6 +132,20 @@
   margin-bottom: 28px;
 }
 
+.registration__info {
+  @media screen and (min-width: 768px) {
+    text-align: end;
+    max-width: 99px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width:1280px){
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 127px;
+    margin: 0 64px 0 0;
+  }
+}
 .registration__cta {
   position: relative;
   font-size: 16px;
@@ -100,30 +165,55 @@
       width: 180px;
       transform: rotate(90deg);
       top: 150px;
-        left: -110px;
+      left: -110px;
     }
+    @media screen and (min-width: 1280px) {
+      width: 190px;
+      top: 85px;
+      left: -127px;
+    }
+  }
+
+  @media screen and (min-width:768px){
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width:1280px){
+    font-size: 18px;
+    line-height: 1.22 ;
   }
 }
 
-.registration__info {
-  @media screen and (min-width: 768px) {
-    text-align: end;
-  }
-}
+
 
 .personal-info {
   @media screen and (min-width: 768px) {
     max-width: 237px;
     text-align: left;
   }
-}
 
+  @media screen and (min-width:1280px){
+    margin-right: 23px;
+  }
+}
+// .info__wrap {
+//   @media screen and (min-width:1280px) {
+//     display: flex;
+//   }
+  
+// }
 .form__item {
   margin-bottom: 20px;
 
   &:last-child {
     margin-bottom: 32px;
   }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
+      &:last-child {
+          margin-bottom: 0;
+        }
+    }
 }
 
 .form__input {
@@ -131,6 +221,7 @@
   background-color: var(--bg-color-form);
   border: 0 solid var(--bg-color-form);
   border-bottom: 1px solid var(--acent-color);
+
 
   &:hover {
     outline-style: none;
@@ -175,6 +266,13 @@
   &:hover {
     background-color: var(--hover-color);
     box-shadow: 0 10px 12px 0 rgba(122, 121, 121, 0.201), 0 17px 50px 0 rgba(140, 135, 135, 0.19);
+  }
+
+  @media screen and (min-width:1280px) {
+    width: 158px;
+    height: 45px;
+    font-size: 24px;
+    line-height: 1.25;
   }
 
 }
