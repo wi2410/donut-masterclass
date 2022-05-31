@@ -10,6 +10,7 @@
         menuBtnRef.setAttribute('aria-expanded', !expanded);
 
         mobileMenuRef.classList.toggle('mobile-menu--is-open');
+        document.body.classList.toggle("menu-open");
         body.classList.toggle('body--scroll-hidden');
         body.classList.toggle('body--scroll-hidden::-webkit-scrollbar');
     });
