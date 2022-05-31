@@ -7,23 +7,48 @@
     margin: 0 auto;
     max-width: 768px;
 
-    background-image: url(../images/registration/registration-donut.png), url(../images/registration/confetti.png);
+    background-image: url(../images/registration/registration-donut.png);
     background-repeat: no-repeat;
-    background-size: 255px, 345px;
-    background-position: -4% -18%, 116% 190%;
+    background-size: 255px;
+    background-position: -4% -18%;
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-          background-image: url(../images/registration/registration-donut@2x.png), url(../images/registration/confetti@2x.png);
-      }
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url(../images/registration/registration-donut@2x.png);
+    }
   }
 
-    @media screen and (min-width:1280px) {
-      max-width: 1280px;
-      background-position: 8% 15%, 99% -34%;;
-      background-size: 255px, 544px;
+  @media screen and (min-width:1280px) {
+    padding-bottom: 160px;
+    max-width: 1280px;
+    background-position: 8% 15%;
+    background-size: 255px;
+  }
+}
+
+.background-confetti {
+  @media screen and (min-width:768px) {
+    background-image: url(../images/registration/confetti.png);
+    margin: 0 auto;
+    background-size: 345px;
+    background-repeat: no-repeat;
+    background-position: 116% 40%;
+    max-width: 768px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url(../images/registration/confetti@2x.png);
     }
+  }
+
+  @media screen and (min-width:1280px) {
+    max-width: 1280px;
+    background-position: 99% 34%;
+    background-size: 544px;
+  }
+
 }
 
 .registration__border {
