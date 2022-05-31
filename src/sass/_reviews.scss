@@ -48,7 +48,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6px;
-
+    width: fit-content;
     border-radius: 50%;
 }
 .rate__icon {
@@ -69,11 +69,6 @@
     margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1280px) {
-    .reviews__img {
-        width: 136px;
-    }
-}
 
 // =====================СЛАЙДЕР====================
 /* Обмежувальна оболонка */
@@ -107,10 +102,6 @@
     .reviews__img {
         @media screen and (min-width: 768px) {
             width: 186px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            width: 234px;
         }
     }
 }
@@ -151,6 +142,7 @@
 }
 .slider {
     position: relative;
+    margin-top: 40px;
 }
 
 // =========textslide=======
