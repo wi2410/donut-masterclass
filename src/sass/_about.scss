@@ -8,21 +8,35 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url(../images/about/coffee-donut@2x.png);
-        }
+    }
 
-        @media (min-width: 768px) {
-            max-width: 768px;
-            margin-right: auto;
-            margin-left: auto;
-            background-size: 336px;
-            background-position: left 30px top 0;
-        }
+    @media (min-width: 768px) {
+        max-width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+        background-size: 336px;
+        background-position: 0 0;
+    }
+
+    @media (min-width: 1280px) {
+        max-width: 1280px;
+        position: relative;
+        height: 535px;
+        background-size: 501px;
+    }
 
     &__box {
         @media (min-width: 768px) {
             margin-left: auto;
 
             width: 336px;
+        }
+
+        @media (min-width: 1280px) {
+            width: 392px;
+            position: absolute;
+            top: 43px;
+            right: 0;
         }
     }
 
@@ -39,6 +53,11 @@
 
             text-align: center;
         }
+
+        @media (min-width: 1280px) {
+        font-size: 36px;
+        line-height: 1.80;
+        }
     }
 
     &__text {
@@ -48,11 +67,19 @@
         &:not(:last-child) {
             margin-bottom: revert;
         }
+
+        @media (min-width: 1280px) {
+            font-size: 18px;
+            line-height: 1.22;
+        }
     }
 
     &__content {
         display: none;
-        transition: transform 1250ms linear;
+
+        @media (min-width: 1280px) {
+            display: block;
+        }
     }
 
     &__label {
@@ -72,6 +99,10 @@
         @media (min-width: 768px) {
             margin-bottom: 88px;
         }
+
+        @media (min-width: 1280px) {
+            display: none;
+        }
     }
 }
 
@@ -85,10 +116,13 @@
 
 #check:checked ~ .about__label {
     visibility: hidden;
+    position: relative;
 }
 
 #check:checked ~ .about__label:after {
     content: 'Less';
     display: block;
     visibility: visible;
+    position: absolute;
+    top: 16px;
 }
