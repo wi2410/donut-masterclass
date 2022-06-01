@@ -190,3 +190,8 @@
     font-size: 14px;
     color: var(--acent-color);
 }
+// ANIMATIONS JS //
+.pulse {
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
+}
