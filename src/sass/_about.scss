@@ -21,6 +21,7 @@
     @media (min-width: 1280px) {
         max-width: 1280px;
         position: relative;
+        margin-bottom: 22px;
         height: 535px;
         background-size: 501px;
     }
@@ -61,16 +62,20 @@
     }
 
     &__text {
+        margin-bottom: 16px;
+
         font-size: 16px;
         line-height: 1.25;
 
-        &:not(:last-child) {
-            margin-bottom: revert;
-        }
+        
 
         @media (min-width: 1280px) {
             font-size: 18px;
             line-height: 1.22;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -124,5 +129,5 @@
     display: block;
     visibility: visible;
     position: absolute;
-    top: 16px;
+    top: 0;
 }
