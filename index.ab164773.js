@@ -1,2 +1,0 @@
-(()=>{const e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]"),o=document.querySelector("[data-body]");e.addEventListener("click",(()=>{const d="true"===e.getAttribute("aria-expanded")||!1;e.setAttribute("aria-expanded",!d),t.classList.toggle("mobile-menu--is-open"),o.classList.toggle("body--scroll-hidden"),o.classList.toggle("body--scroll-hidden::-webkit-scrollbar")}))})();
-//# sourceMappingURL=index.ab164773.js.map
