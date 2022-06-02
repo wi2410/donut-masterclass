@@ -95,7 +95,7 @@
 
           &:hover{
               padding: 2px 5px;
-              transition:  .25s cubic-bezier(.4, 0, .2, 1);
+              transition: 250ms var(--cubic);
           }
     }
 }
@@ -155,11 +155,13 @@
     color: var(--hover-color);
     border-color: var(--actived-color);
 
-    box-shadow: 0 10px 12px 0 
-        rgba(122, 121, 121, 0.201), 0 17px 50px 0 
-        rgba(140, 135, 135, 0.19);
+    box-shadow: var(--btn-box-shadow);
 
-    transition: color .25s cubic-bezier(.4, 0, .2, 1);
+    transition: color 250ms var(--cubic),
+                border-color 250ms var(--cubic),
+                border 250ms var(--cubic),
+                padding 250ms var(--cubic),
+                box-shadow 250ms var(--cubic);
 
     }
 
@@ -256,17 +258,16 @@
     &:hover,
     &:focus{
         background-color: var(--hover-color);
-        box-shadow: 0 10px 12px 0 
-        rgba(122, 121, 121, 0.201), 0 17px 50px 0 
-        rgba(140, 135, 135, 0.19);
+        box-shadow: var(--btn-box-shadow);
 
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition:  color 250ms var(--cubic),
+                     background-color 250ms var(--cubic),
+                     box-shadow 250ms var(--cubic) ;
     
     &:active{
         background-color: var(--actived-color);
 
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms  var(--cubic);
     }    
     }
     @media screen and (min-width:768px){
@@ -315,18 +316,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
         background-color: var(--hover-color);
            fill: var(--btn-text-color);
             
-        box-shadow: 0 10px 12px 0 
-        rgba(122, 121, 121, 0.201), 0 17px 50px 0 
-        rgba(140, 135, 135, 0.19);   
+        box-shadow: var(--btn-box-shadow);  
+        transition: fill 250ms  var(--cubic),
+                    background-color 250ms  var(--cubic),
+                    box-shadow 250ms  var(--cubic) ; 
         }
     } 
 }
