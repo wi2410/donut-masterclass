@@ -1,8 +1,8 @@
 .background-header{
     width: 100%;
 
-    @media screen and (min-width:320px) {
-        background-image: url(../images/background-top.png);
+    @media screen and (max-width:320px) {
+        background-image: url(../images/bg-mobile-top.png);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: top;
@@ -11,12 +11,12 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-          background-image: url(../images/background-top@2x.png);
+          background-image: url(../images/bg-mobile-top@2x.png);
         }
     }
 
     @media screen and (min-width:768px) {
-        background-image: url(../images/background-top.png);
+        background-image: url(../images/bg-tablet-top.png);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: top;
@@ -25,7 +25,7 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-          background-image: url(../images/background-top@2x.png);
+          background-image: url(../images/bg-tablet-top@2x.png);
         }
     }
     @media screen and (min-width:1280px) {
@@ -50,7 +50,7 @@
 width: 100%;
 
 @media screen and (min-width:320px) {
-    background-image: url(../images/background-bottom.png);
+    background-image: url(../images/bg-mobile-bottom.png);
     background-repeat: no-repeat;
     background-size: 100% 1337px;
     background-position: top;
@@ -59,12 +59,12 @@ width: 100%;
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../images/background-bottom@2x.png);
+      background-image: url(../images/bg-mobile-bottom@2x.png);
     }
 }
 
 @media screen and (min-width:768px) {
-    background-image: url(../images/background-bottom.png);
+    background-image: url(../images/bg-tablet-bottom.jpg);
     background-repeat: no-repeat;
     background-size: 100% 1519px;
     background-position: top;
@@ -73,7 +73,7 @@ width: 100%;
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../images/background-bottom@2x.png);
+      background-image: url(../images/bg-tablet-bottom@2x.png);
     }
 }
 @media screen and (min-width:1280px) {
