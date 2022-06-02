@@ -1,0 +1,24 @@
+.pop-up {
+  position: fixed;
+  right: 50%;
+  top: 30px;
+
+  padding: 30px;
+
+  background-color: rgba(171, 129, 108, 0.8);
+  opacity: 0.8;
+  color: #fff;
+  z-index: 100;
+  transition: opacity 1s;
+  transform: translateX(50%);
+
+  @media screen and (max-width: 767px) {
+    width: 90%;
+    text-align: center;
+  }
+
+  &--hide {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
