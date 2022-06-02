@@ -36,7 +36,7 @@
             max-width: 1280px;
             margin-left: auto;
             margin-right: auto;
-            padding-bottom: 100px;
+            padding-bottom: 80px;
         }
     
     @media (min-device-pixel-ratio: 2),
@@ -52,7 +52,7 @@
     
                 margin-left: auto;
                 margin-right: auto;
-                padding-bottom: 100px;
+                padding-bottom: 80px;
             }
         
         @media (min-device-pixel-ratio: 2),
@@ -63,12 +63,18 @@
          
 }
 // Logo
+
 .logo{
     display: flex;
     justify-content: center;
 
     @media screen and (min-width:768px){
         justify-content: left;
+        max-width: 96px;
+    }
+
+    @media screen and (min-width:1280px){
+        max-width: 158px;
     }
 
     .logo__icon{
@@ -120,7 +126,7 @@
     align-items: center;}
     margin-left: 162px;
 
-    .nav__item{
+    .nav__link{
         color: var(--text-color);
         cursor: pointer;
         font-size: 18px;
@@ -140,8 +146,8 @@
         }
     }
    
-    .nav__item:hover,
-    .nav__item:focus {
+    .nav__link:hover,
+    .nav__link:focus {
     padding: 8px 20px;
     border-radius: 4px;
     border: 1px solid transparent;
