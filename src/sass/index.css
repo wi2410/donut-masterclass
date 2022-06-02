@@ -78,6 +78,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .header {
   background-image: url(..//images/header/pic-donuts-mobile.png);
   background-repeat: no-repeat;
@@ -921,6 +922,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
     width: 180px;
     height: 180px;
   }
+
 }
 
 .program__title {
@@ -931,6 +933,26 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
 }
 
 @media screen and (min-width: 1280px) {
+  .program__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.program__subtitle {
+  margin-bottom: 8px;
+
+}
+
+.program__title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.277;
+}
+
+@media screen and (min-width: 1280px) {
+
   .program__title {
     font-size: 24px;
     line-height: 30px;
@@ -2419,6 +2441,7 @@ footer {
   }
 }
 
+
 @media screen and (min-width: 1280px) {
   .footer-bg {
     background-size: 332px;
@@ -2549,6 +2572,13 @@ footer {
     margin-bottom: -20px;
     border-right-width: 5px;
     border-top-width: 5px;
+
+
+@media screen and (min-width: 1280px) {
+  .footer-bg {
+    background-size: 332px;
+    background-position: 100% 5%;
+
   }
 }
 /*# sourceMappingURL=index.css.map */
