@@ -85,3 +85,20 @@ footer {
         background-position: 100% 5%;
     }
 }
+.footer-contacts__link {
+    position: relative;
+    &::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--hover-color);
+            content: '';
+            transition: width 0.3s ease-out;
+        }
+}
+.footer-contacts__link:hover::after,
+.footer-contacts__link:focus:after {
+    width: 100%;
+}

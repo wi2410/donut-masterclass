@@ -26,7 +26,6 @@ $(".reviews__content-slider").slick({
             <span class="slick-dots-current">${current}</span>
             <span class="slick-dots-separator">/</span>
             <span class="slick-dots-total">${total}</span>
-        </button>`;
-    },
+        </button>`;},
 });
-    });
+});  
