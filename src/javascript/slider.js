@@ -1,16 +1,19 @@
 $(document).ready(function(){
-    $('.slider').slick({
+     $('.slider').slick({
         asNavFor: ".reviews__content-slider",
         slidesToShow: 3,
         centerMode: true,
         centerPadding: '20px',
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
         responsive: [{
             breakpoint: 767,
             settings: {
                 slidesToShow: 1,
             }
-        }]
-    });
+     }]
+});
 
 $(".reviews__content-slider").slick({
     infinite: true,
@@ -29,3 +32,6 @@ $(".reviews__content-slider").slick({
         </button>`;},
 });
 });  
+
+
+
