@@ -59,6 +59,12 @@
 }
 .rate__icon {
     margin-bottom: 9px;
+    fill: rgb(0, 0, 0);
+    .bounceIn {
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
 }
 .reviews__name {
     margin-bottom: 9px;
