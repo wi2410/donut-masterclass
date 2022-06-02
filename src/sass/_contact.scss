@@ -142,8 +142,8 @@
     border-radius: 25px;
     border: 1px solid var(--acent-color);
    
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--cubic);
+    transition: box-shadow 250ms var(--cubic);
 
     @media screen and (min-width: 1280px){
         width: 182px;
@@ -156,13 +156,12 @@
 &:hover,
 &:focus{
     background-color: var(--hover-color);
-    box-shadow: 0 10px 12px 0 rgba(122, 121, 121, 0.201), 
-    0 17px 50px 0 rgba(140, 135, 135, 0.19);
+    box-shadow: var(--btn-box-shadow);
   
  &:active{
         background-color: var(--actived-color);
 
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms var(--cubic);
     } 
 }
 }
