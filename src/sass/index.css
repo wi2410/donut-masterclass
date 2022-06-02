@@ -74,6 +74,11 @@ body.menu-open {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .header {
   background-image: url(..//images/header/pic-donuts-mobile.png);
   background-repeat: no-repeat;
@@ -917,6 +922,7 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
     width: 180px;
     height: 180px;
   }
+
 }
 
 .program__title {
@@ -927,6 +933,26 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
 }
 
 @media screen and (min-width: 1280px) {
+  .program__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.program__subtitle {
+  margin-bottom: 8px;
+
+}
+
+.program__title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.277;
+}
+
+@media screen and (min-width: 1280px) {
+
   .program__title {
     font-size: 24px;
     line-height: 30px;
@@ -1561,6 +1587,16 @@ input[type='checkbox']:checked ~ .hamburger-lines .line3 {
 
 .rate__icon {
   margin-bottom: 9px;
+  fill: black;
+}
+
+.rate__icon .bounceIn {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .reviews__name {
@@ -2405,10 +2441,144 @@ footer {
   }
 }
 
+
 @media screen and (min-width: 1280px) {
   .footer-bg {
     background-size: 332px;
     background-position: 100% 5%;
+  }
+}
+
+.footer-contacts__link {
+  position: relative;
+}
+
+.footer-contacts__link::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--hover-color);
+  content: '';
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
+.footer-contacts__link:hover::after,
+.footer-contacts__link:focus:after {
+  width: 100%;
+}
+
+.pop-up {
+  position: fixed;
+  right: 50%;
+  top: 30px;
+  padding: 30px;
+  background-color: rgba(171, 129, 108, 0.8);
+  opacity: 0.8;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+@media screen and (max-width: 767px) {
+  .pop-up {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+.pop-up--hide {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: rgba(171, 129, 108, 0.5);
+  color: #fff;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transition-property: opacity, background-color, -webkit-box-shadow;
+  transition-property: opacity, background-color, -webkit-box-shadow;
+  transition-property: opacity, background-color, box-shadow;
+  transition-property: opacity, background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.to-top:hover {
+  background-color: #876655;
+  -webkit-box-shadow: 0 3px 1px #0000001a, 0 1px 2px #00000014, 0 2px 2px #0000001f;
+          box-shadow: 0 3px 1px #0000001a, 0 1px 2px #00000014, 0 2px 2px #0000001f;
+}
+
+.to-top--hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .to-top {
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .to-top {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.to-top__icon {
+  display: block;
+  width: 40%;
+  height: 40%;
+  margin-bottom: -10px;
+  border-radius: 3px;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 1280px) {
+  .to-top__icon {
+    margin-bottom: -20px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+
+
+@media screen and (min-width: 1280px) {
+  .footer-bg {
+    background-size: 332px;
+    background-position: 100% 5%;
+
   }
 }
 /*# sourceMappingURL=index.css.map */
