@@ -15,7 +15,11 @@
         background-image: url(..//images/header/pic-donuts-tablet.png);
         background-position: 288px -35px;
         background-size: initial; 
-        margin-bottom: 28px;
+        padding-bottom: 28px;
+        
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -27,7 +31,12 @@
     @media screen and (min-width:1280px){
             background-image: url(..//images/header/pic-donuts.png);
             background-position: 564px -170px;
-            background-size: initial; 
+            background-size: initial;
+
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 100px;
         }
     
     @media (min-device-pixel-ratio: 2),
@@ -35,6 +44,22 @@
             (min-resolution: 2dppx) {
                 background-image: url(..//images/header/pic-donuts@2x.png);
              }
+             
+             @media screen and (min-width:1300px){
+                background-image: url(..//images/header/pic-donuts.png);
+                background-position: 500px -170px;
+                background-size: initial;
+    
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 100px;
+            }
+        
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(..//images/header/pic-donuts@2x.png);
+                 }
          
 }
 // Logo
@@ -60,6 +85,11 @@
           @media screen and (min-width:1280px){
             width: 158px;
             height: 80px;
+          }
+
+          &:hover{
+              padding: 2px 5px;
+              transition:  .25s cubic-bezier(.4, 0, .2, 1);
           }
     }
 }
@@ -91,13 +121,11 @@
     margin-left: 162px;
 
     .nav__item{
+        color: var(--text-color);
+        cursor: pointer;
         font-size: 18px;
         line-height: 1.22;
-        color: var(--text-color);
-        padding-top: 40px;
-        padding-bottom: 40px;
-        cursor: pointer;
-    
+        
         @media screen and (max-width:1279px){
             display: none;
         }   
@@ -111,12 +139,22 @@
           margin-right: 20px;
         }
     }
-
-        
+   
     .nav__item:hover,
     .nav__item:focus {
-        background-color: aqua;
-        color: var(--accent-color);
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+
+    color: var(--hover-color);
+    border-color: var(--actived-color);
+
+    box-shadow: 0 10px 12px 0 
+        rgba(122, 121, 121, 0.201), 0 17px 50px 0 
+        rgba(140, 135, 135, 0.19);
+
+    transition: color .25s cubic-bezier(.4, 0, .2, 1);
+
     }
 
 }
@@ -143,6 +181,7 @@
         height: 76px;
         text-align: left;
         margin-bottom:8px ;
+
     }
 
     @media screen and (min-width:1280px){
@@ -215,10 +254,13 @@
         rgba(122, 121, 121, 0.201), 0 17px 50px 0 
         rgba(140, 135, 135, 0.19);
 
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-
     &:active{
         background-color: var(--actived-color);
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }    
     }
     @media screen and (min-width:768px){
@@ -260,28 +302,26 @@
     .hero-soc__item:not(:last-child) {
         margin-right: 16px;
     }
-    
-    .hero-soc__icon{
-        fill: var(--text-color);
-
-        // width: 28px;
-        // height: 28px;
+    .hero-soc__link{
+        width: 28px;
+        height: 28px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-
-        &:hover,
-        &:focus {
-            background-color: var(--hover-color);
-            fill: var(--btn-text-color);
-    }
-        // &:hover,
-        // &:focus{
-        //     fill: var(--hover-color);
-        // }
-    } 
+        
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-
+    &:hover,
+    &:focus {
+        background-color: var(--hover-color);
+           fill: var(--btn-text-color);
+            
+        box-shadow: 0 10px 12px 0 
+        rgba(122, 121, 121, 0.201), 0 17px 50px 0 
+        rgba(140, 135, 135, 0.19);   
+        }
+    } 
 }
 
