@@ -3,6 +3,13 @@
     const mobileMenuRef = document.querySelector('[data-menu]');
     const body = document.querySelector('[data-body]');
 
+    document.querySelectorAll(".mobile-menu__nav-link").forEach(n => n.addEventListener("click", () => {
+        mobileMenuRef.classList.remove('mobile-menu--is-open');
+        document.body.classList.remove("menu-open");
+        body.classList.remove('body--scroll-hidden');
+        body.classList.remove('body--scroll-hidden::-webkit-scrollbar');
+    }))
+
     menuBtnRef.addEventListener('click', () => {
         const expanded =
             menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
