@@ -30,14 +30,15 @@
   margin-top: 55px;
   flex-basis: 350px;
   margin-left: auto;
-  margin-right:auto;
+  // margin-right:auto;
   @media screen and (min-width:$tablet) {
       margin-top: 0;
       margin-left: 32px;    
   }
   @media screen and (min-width:$desktop) {
      flex-basis: 500px;
-     margin-left: 142px;    
+     margin-left: auto;
+    //  margin-left: 142px;    
   }
 
 }
@@ -187,6 +188,7 @@
 @media screen and (min-width:768px) {
 .program__container{
     display: flex;
+    justify-content: center;
    
 }  
 .program__flex{
@@ -195,7 +197,7 @@
   text-align: left;
   max-width: 336px;
   @media screen and (min-width:$desktop) {
-      max-width: 400px;
+      max-width: 392px;
     }}}
 
 // icon
@@ -255,6 +257,10 @@
 } 
 .program{
   padding-bottom: 50px;
+  @media screen and(min-width:$desktop) {
+    max-width: 1033px;
+    
+  }
    
 }
 
@@ -268,17 +274,17 @@
   display: inline-block;
 }
 .program__tumb:nth-child(1)::before{
-  background-image: url(../images/program/donut-one/mob.webp);
+  background-image: url(../images/program/donut-one/mob.png);
   width: 76.57px;
   height: 80px;
 
 @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
- background-image: url(../images/program/donut-one/mob@2x.webp);}
+ background-image: url(../images/program/donut-one/mob@2x.png);}
 
  @media screen and(min-width:$tablet){
-  background-image: url(../images/program/donut-one/tablet.webp);
+  background-image: url(../images/program/donut-one/tablet.png);
   width: 81.91px;
   height: 90.36px;
 
@@ -286,32 +292,32 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       
-      background-image: url(../images/program/donut-one/tablet@2x.webp)
+      background-image: url(../images/program/donut-one/tablet@2x.png)
 
     }}
     @media screen and(min-width:$desktop){
-      background-image: url(../images/program/donut-one/desktop.webp);
+      background-image: url(../images/program/donut-one/desktop.png);
       width: 97px;
       height: 107px;
      @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
           
-        background-image: url(../images/program/donut-one/desktop@2x.webp)
+        background-image: url(../images/program/donut-one/desktop@2x.png)
     
         }}}
    
 .program__tumb:nth-child(2)::before{
-  background-image: url(../images/program/donut-two/mob.webp);
+  background-image: url(../images/program/donut-two/mob.png);
   width: 75.2px;
   height: 80px;
   @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx){
-   background-image: url(../images/program/donut-two/mob@2x.webp);}
+   background-image: url(../images/program/donut-two/mob@2x.png);}
   
    @media screen and(min-width:$tablet){
-    background-image: url(../images/program/donut-two/tablet.webp);
+    background-image: url(../images/program/donut-two/tablet.png);
     width: 68.97px;
     height: 76.44px;
   
@@ -319,32 +325,32 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
         
-        background-image: url(../images/program/donut-two/tablet@2x.webp)
+        background-image: url(../images/program/donut-two/tablet@2x.png)
   
       }}
       @media screen and(min-width:$desktop){
-        background-image: url(../images/program/donut-two/desktop.webp);
+        background-image: url(../images/program/donut-two/desktop.png);
         width: 83px;
         height: 92px;
        @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
             
-          background-image: url(../images/program/donut-two/desktop@2x.webp)
+          background-image: url(../images/program/donut-two/desktop@2x.png)
       
           }}}
   
 .program__tumb:nth-child(3)::before{
-  background-image: url(../images/program/donut-three/mob.webp);
+  background-image: url(../images/program/donut-three/mob.png);
   width: 78.22px;
   height: 80px;
   @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx){
-   background-image: url(../images/program/donut-three/mob@2x.webp);}
+   background-image: url(../images/program/donut-three/mob@2x.png);}
   
    @media screen and(min-width:$tablet){
-    background-image: url(../images/program/donut-three/tablet.webp);
+    background-image: url(../images/program/donut-three/tablet.png);
     width: 74.31px;
     height: 81.91px;
   
@@ -352,32 +358,32 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
         
-        background-image: url(../images/program/donut-three/tablet@2x.webp)
+        background-image: url(../images/program/donut-three/tablet@2x.png)
   
       }}
       @media screen and(min-width:$desktop){
-        background-image: url(../images/program/donut-three/desktop.webp);
+        background-image: url(../images/program/donut-three/desktop.png);
         width: 88px;
         height: 97px;
        @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
             
-          background-image: url(../images/program/donut-three/desktop@2x.webp)
+          background-image: url(../images/program/donut-three/desktop@2x.png)
       
           }}}
 
 .program__tumb:nth-child(4)::before{
-  background-image: url(../images/program/donut-four/mob.webp);
+  background-image: url(../images/program/donut-four/mob.png);
   width: 73.63px;
   height: 80px;
   @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx){
-   background-image: url(../images/program/donut-four/mob@2x.webp);}
+   background-image: url(../images/program/donut-four/mob@2x.png);}
   
    @media screen and(min-width:$tablet){
-    background-image: url(../images/program/donut-four/tablet.webp);
+    background-image: url(../images/program/donut-four/tablet.png);
     width: 70.09px;
     height: 77.69px;
   
@@ -385,59 +391,31 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
         
-        background-image: url(../images/program/donut-four/tablet@2x.webp)
+        background-image: url(../images/program/donut-four/tablet@2x.png)
   
       }}
       @media screen and(min-width:$desktop){
-        background-image: url(../images/program/donut-four/desktop.webp);
+        background-image: url(../images/program/donut-four/desktop.png);
         width: 83px;
        height: 92px;
        @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
             
-          background-image: url(../images/program/donut-four/desktop@2x.webp)
+          background-image: url(../images/program/donut-four/desktop@2x.png)
       
           }}}
           .program__tumb:hover::before {
-            animation: scale 1200ms ease-in-out infinite;
+            animation: rotate 1300ms ease-in-out both;
           }
           
-          @keyframes scale {
+          @keyframes rotate {
             0% {
-              transform: scale3d(1.1,1.1,1.1);
+              transform: rotate(0deg);
             }
           
-            50% {
-              transform: scale3d(1.2,1.2,1.2);
-            }
             100% {
-              transform: scale3d(1.1,1.1,1.1);
+              transform: rotate(360deg);
             }
-
           }
-          // .program__tumb:hover::before {
-          //   animation: rotate 1200ms ease-in-out both;
-          // }
-          
-          // @keyframes rotate {
-          //   0% {
-          //     transform: rotate(0deg);
-          //   }
-          
-          //   100% {
-          //     transform: rotate(360deg);
-          //   }
-          // }
 
-
-          // .program__tumb:hover::before {
-          //   animation: scale 1200ms ease-in-out both;
-          // }
-          // @keyframes scale {
-          //   0%{
-          //     transform: scale(1)
-          //   }
-          //   100%{
-          //     transform: scale(1.3)
-          //   }}
