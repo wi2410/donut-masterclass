@@ -7,16 +7,16 @@ footer {
     align-items: center;
     justify-content: center;
     padding-top: 32px;
+    margin-bottom: 32px;
+    @media screen and (min-width:1280px) {
+        margin-bottom: 80px;
+    }
 }
 .social-btns__button {
     &:not(:last-child) {
     margin-right: 16px;
     }
     fill: var(--text-color);
-    margin-bottom: 32px;
-        @media screen and (min-width:1280px) {
-            margin-bottom: 80px;
-        }
 }
 .footer-contacts {
     font-style: normal;
@@ -29,10 +29,11 @@ footer {
     @media screen and (min-width:768px) {
         justify-content: start;
     }
+        margin-bottom: 20px;
 }
 .footer-contacts__item {
     fill: var(--text-color);
-    margin-bottom: 20px;
+    
 }
 @media screen and (min-width:768px) {
     .footer-contacts__item {
@@ -47,20 +48,6 @@ footer {
             margin-right: 620px;
             margin-left: 128px;
         }
-    }
-}
-.footer-img {
-    position: absolute;
-    width: 113px;
-    bottom: 0;
-    right: -30;
-    z-index: -1;
-    @media screen and (min-width:768px) {
-            width: 207px;
-        }
-    @media screen and (min-width:1280px) {
-        width: 332px;
-        bottom: -20;
     }
 }
 .social-btns__link {
@@ -79,4 +66,22 @@ footer {
             background-color: var(--hover-color);
             fill: var(--btn-text-color);
         }
+}
+.footer-bg {
+    background-image: url('../images/footer/plate-spoon.png');
+    background-size: 113px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    @media screen and (min-width:768px) {
+        background-size: 207px;
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url('../images/footer/plate-spoon@2x.png');
+            }
+    }
+    @media screen and (min-width:1280px) {
+        background-size: 332px;
+        background-position: 100% 5%;
+    }
 }
