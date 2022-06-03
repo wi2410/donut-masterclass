@@ -25,6 +25,7 @@
     background-position: 7% 9%;
     background-size: 255px;
   }
+  
 }
 
 .background-confetti {
@@ -289,12 +290,17 @@
   border-radius: 25px;
   background-color: var(--acent-color);
   cursor: pointer;
-  transition: background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, box-shadow 250ms var(--cubic);
 
   &:hover {
     background-color: var(--hover-color);
-    box-shadow: 0 10px 12px 0 rgba(122, 121, 121, 0.201), 0 17px 50px 0 rgba(140, 135, 135, 0.19);
+    box-shadow: var(--btn-box-shadow);
   }
+
+    &:active {
+      background-color: var(--hover-color);
+      box-shadow: var(--btn-box-shadow);
+    }
 
   @media screen and (min-width:1280px) {
     width: 158px;
