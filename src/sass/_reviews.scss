@@ -9,7 +9,7 @@
     padding-bottom: 30px;
 
     @media screen and (min-width: 768px) {
-        max-width: 626px;
+        // max-width: 626px;
         padding-bottom: 40px;
         margin-left: auto;
         margin-right: auto;
@@ -99,9 +99,13 @@
             width: 110px;
         }
 
-        @media screen and (min-width: 1280px) {
-            width: 136px;
+         @media screen and (min-width: 768px) {
+            width: 151px;
         }
+        @media screen and (min-width: 1280px) {
+            width: 285px;
+        }
+       
     }
 }
 /* Слайд основний */
@@ -112,8 +116,14 @@
     }
 
     .reviews__img {
+        @media screen and (max-width: 768px) {
+            width: 240px;
+        }
         @media screen and (min-width: 768px) {
-            width: 186px;
+            width: 236px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 394px;
         }
     }
         .bounceIn {
@@ -122,46 +132,6 @@
             animation-iteration-count: infinite;
         }
 }
-/* Стрілка */
-.slick-arrow {
-    position: absolute;
-    top: 15%;
-    z-index: 10;
-    left: 100px;
-    font-family: Caveat Brush;
-    font-size: 15px;
-    line-height: 1.2;
-    padding-top: 19px;
-    padding-bottom: 21px;
-    color: var(--acent-color);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-/* Стрілка вліво */
-.slick-arrow.slick-prev {
-    left: 0;
-
-    @media screen and (min-width: 1280px) {
-        transform: translateX(-50%);
-    }
-}
-
-/* Стрілка вправо */
-.slick-arrow.slick-next {
-    left: 100%;
-    transform: translateX(-100%);
-
-    @media screen and (min-width: 1280px) {
-        transform: translateX(-50%);
-    }
-}
-.slider {
-    position: relative;
-    margin-top: 40px;
-}
-
 // =========textslide=======
 .slick-dots {
     display: flex;
@@ -210,4 +180,10 @@
 .flipInX {
     animation-duration: 250ms;
     animation-delay: 3s;
+}
+.slick-next {
+    display: none;
+}
+.slick-arrow {
+    display: none;
 }
