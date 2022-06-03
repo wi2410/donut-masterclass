@@ -1,35 +1,35 @@
 .background-header{
     width: 100%;
 
-    @media screen and (max-width:320px) {
-        background-image: url(../images/bg-mobile-top.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: top;
-        z-index: 20;
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: url(../images/bg-mobile-top@2x.png);
-        }
-    }
+//     @media screen and (max-width:320px) {
+//         background-image: url(../images/bg-mobile-top.png);
+//         background-repeat: no-repeat;
+//         background-size: 100%;
+//         background-position: top;
+//         z-index: 20;
+//         @media (min-device-pixel-ratio: 2),
+//         (-webkit-min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//           background-image: url(../images/bg-mobile-top@2x.png);
+//         }
+//     }
 
-    @media screen and (min-width:768px) {
-        background-image: url(../images/bg-tablet-top.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: top;
-        z-index: 20;
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: url(../images/bg-tablet-top@2x.png);
-        }
-    }
+//     @media screen and (min-width:768px) {
+//         background-image: url(../images/bg-tablet-top.png);
+//         background-repeat: no-repeat;
+//         background-size: 100%;
+//         background-position: top;
+//         z-index: 20;
+//         @media (min-device-pixel-ratio: 2),
+//         (-webkit-min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//           background-image: url(../images/bg-tablet-top@2x.png);
+//         }
+//     }
     @media screen and (min-width:1280px) {
-        background-image:url(../images/about/spoon.png),url(../images/background-top.png);
+        background-image:url(../images/about/spoon.png);
         background-repeat: no-repeat;
         background-size: auto, 100%;
         background-position:0 501px, top;
@@ -39,57 +39,82 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-          background-image: url(../images/about/spoon@2x.png),url(../images/background-top@2x.png);
+          background-image: url(../images/about/spoon@2x.png);
         }
     }
 }
 
 
 
-.background-footer{
-width: 100%;
+// .background-footer{
+// width: 100%;
 
-@media screen and (min-width:320px) {
-    background-image: url(../images/bg-mobile-bottom.png);
-    background-repeat: no-repeat;
-    background-size: 100% 1337px;
-    background-position: top;
-    z-index: 20;
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/bg-mobile-bottom@2x.png);
-    }
-}
+// @media screen and (min-width:320px) {
+//     background-image: url(../images/bg-mobile-bottom.png);
+//     background-repeat: no-repeat;
+//     background-size: 100% 1337px;
+//     background-position: top;
+//     z-index: 20;
+//     @media (min-device-pixel-ratio: 2),
+//     (-webkit-min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//       background-image: url(../images/bg-mobile-bottom@2x.png);
+//     }
+// }
 
-@media screen and (min-width:768px) {
-    background-image: url(../images/bg-tablet-bottom.png);
-    background-repeat: no-repeat;
-    background-size: 100% 1519px;
-    background-position: top;
-    z-index: 20;
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/bg-tablet-bottom@2x.png);
-    }
-}
-@media screen and (min-width:1280px) {
-    background-image: url(../images/background-bottom.png);
-    background-repeat: no-repeat;
-    background-size: 100% 1861px;
-    background-position: top;
-    z-index: 20;
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/background-bottom@2x.png);
-    }
-}
+// @media screen and (min-width:768px) {
+//     background-image: url(../images/bg-tablet-bottom.png);
+//     background-repeat: no-repeat;
+//     background-size: 100% 1519px;
+//     background-position: top;
+//     z-index: 20;
+//     @media (min-device-pixel-ratio: 2),
+//     (-webkit-min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//       background-image: url(../images/bg-tablet-bottom@2x.png);
+//     }
+// }
+// @media screen and (min-width:1280px) {
+//     background-image: url(../images/background-bottom.png);
+//     background-repeat: no-repeat;
+//     background-size: 100% 1861px;
+//     background-position: top;
+//     z-index: 20;
+//     @media (min-device-pixel-ratio: 2),
+//     (-webkit-min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//       background-image: url(../images/background-bottom@2x.png);
+//     }
+// }
 
     
-}
+// }
 
+
+body {
+  background-image:
+      url('../images/bg-color/bg-top-mobile.svg'),
+      url('../images/bg-color/bg-bottom-mobile.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-size: 100% 13.35%, 100% 44.42%;
+
+    @media screen and (min-width:768px) {
+      background-image: url('../images/bg-color/bg-top-tablet.svg'),
+                        url('../images/bg-color/bg-bottom-tablet.svg');
+      background-repeat: no-repeat, no-repeat;
+      background-position: top center, bottom center;
+      background-size: 100% 25%, 100% 52.5%;
+    }
+    @media screen and (min-width:1280px) {
+      background-image:
+          url('../images/bg-color/bg-top-desktop.svg'),
+          url('../images/bg-color/bg-bottom-desktop.svg');
+      background-repeat: no-repeat, no-repeat;
+      background-position: top center, bottom center;
+      background-size: 100% 29%, 100% 48.5%;
+    }
+}
