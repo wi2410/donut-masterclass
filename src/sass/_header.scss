@@ -1,67 +1,94 @@
-.header{
-    background-image: url(..//images/header/pic-donuts-mobile.png);
+.header {
+    background-image: url(../images/header/pic-donuts-mobile.png);
     background-repeat: no-repeat;
     background-position: -12px -51px;
     background-size: initial;
 
     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(..//images/header/pic-donuts-mobile@2x.png);
-        }
-
-    
-    @media screen and (min-width:768px){
-        background-image: url(..//images/header/pic-donuts-tablet.png);
-        background-position: 288px -35px;
-        background-size: initial; 
-        padding-bottom: 28px;
-        
-        max-width: 768px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(..//images/header/pic-donuts-tablet@2x.png);
-         }
-
-    @media screen and (min-width:1280px){
-            background-image: url(..//images/header/pic-donuts.png);
-            background-position: 564px -170px;
-            background-size: initial;
-
-            max-width: 1280px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 80px;
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/header/pic-donuts-mobile@2x.png);
+        background-size: 150px 190px;
         }
     
-    @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(..//images/header/pic-donuts@2x.png);
-             }
-             
-             @media screen and (min-width:1300px){
-                background-image: url(..//images/header/pic-donuts.png);
-                background-position: 500px -170px;
-                background-size: initial;
-    
-                margin-left: auto;
-                margin-right: auto;
-                padding-bottom: 80px;
-            }
-        
-        @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    background-image: url(..//images/header/pic-donuts@2x.png);
-                 }
-         
+                        @media screen and (min-width:768px) {
+                            
+                                background-image: url(../images/header/pic-donuts-tablet.png);
+                                background-position: 288px -35px;
+                                background-size: initial;
+                                padding-bottom: 28px;
+            
+                                max-width: 768px;
+                                margin-left: auto;
+                                margin-right: auto;
+                            
+            
+            
+            
+                            @media (min-device-pixel-ratio: 2),
+                            (min-resolution: 192dpi),
+                            (min-resolution: 2dppx) {
+                                
+                                    background-image: url(../images/header/pic-donuts-tablet@2x.png);
+                                    background-position: 288px -35px;
+                                    background-size: 380px 396px;
+                                    padding-bottom: 28px;
+                                
+                            }
+                        }
+            
+                        @media screen and (min-width:1280px) {
+                            
+                                background-image: url(../images/header/pic-donuts.png);
+                                background-position: 564px -170px;
+                                background-size: initial;
+            
+                                max-width: 1280px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                padding-bottom: 80px;
+            
+                            
+            
+            
+            
+                            @media (min-device-pixel-ratio: 2),
+                            (min-resolution: 192dpi),
+                            (min-resolution: 2dppx) {
+                                
+                                    background-image: url(../images/header/pic-donuts@2x.png);
+                                    background-position: 564px -170px;
+                                    background-size: 800px 835px;
+                                }
+                        }
+                       
+            
+                        @media screen and (min-width:1300px) {
+                            
+                                background-image: url(../images/header/pic-donuts.png);
+                                background-position: 500px -170px;
+                                background-size: initial;
+            
+                                margin-left: auto;
+                                margin-right: auto;
+                                padding-bottom: 80px;
+                            
+            
+            
+            
+                            @media (min-device-pixel-ratio: 2),
+                            (min-resolution: 192dpi),
+                            (min-resolution: 2dppx) {
+                                
+                                    background-image: url(../images/header/pic-donuts@2x.png);
+                                    background-position: 500px -170px;
+                                    background-size: 790px 825px;
+            
+                            }
+                        }
 }
+    
+
 // Logo
 
 .logo{
