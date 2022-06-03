@@ -148,6 +148,9 @@
 
 .nav{
     position: relative;
+    @media screen and (max-width:1279px) {
+            display: none;
+        }
     @media screen and (min-width:1280px){
     display: flex;
     align-items: center;}
@@ -159,9 +162,7 @@
         font-size: 18px;
         line-height: 1.22;
         
-        @media screen and (max-width:1279px){
-            display: none;
-        }   
+         
     }
 
     .nav__item:not(:last-child){
