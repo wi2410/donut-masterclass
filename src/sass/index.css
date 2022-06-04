@@ -81,7 +81,7 @@ html {
 }
 
 .header {
-  background-image: url(..//images/header/pic-donuts-mobile.png);
+  background-image: url(../images/header/pic-donuts-mobile.png);
   background-repeat: no-repeat;
   background-position: -12px -51px;
   background-size: initial;
@@ -89,13 +89,14 @@ html {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header {
-    background-image: url(..//images/header/pic-donuts-mobile@2x.png);
+    background-image: url(../images/header/pic-donuts-mobile@2x.png);
+    background-size: 150px 190px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header {
-    background-image: url(..//images/header/pic-donuts-tablet.png);
+    background-image: url(../images/header/pic-donuts-tablet.png);
     background-position: 288px -35px;
     background-size: initial;
     padding-bottom: 28px;
@@ -105,15 +106,18 @@ html {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url(..//images/header/pic-donuts-tablet@2x.png);
+    background-image: url(../images/header/pic-donuts-tablet@2x.png);
+    background-position: 288px -35px;
+    background-size: 380px 396px;
+    padding-bottom: 28px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .header {
-    background-image: url(..//images/header/pic-donuts.png);
+    background-image: url(../images/header/pic-donuts.png);
     background-position: 564px -170px;
     background-size: initial;
     max-width: 1280px;
@@ -123,15 +127,17 @@ html {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url(..//images/header/pic-donuts@2x.png);
+    background-image: url(../images/header/pic-donuts@2x.png);
+    background-position: 564px -170px;
+    background-size: 800px 835px;
   }
 }
 
 @media screen and (min-width: 1300px) {
   .header {
-    background-image: url(..//images/header/pic-donuts.png);
+    background-image: url(../images/header/pic-donuts.png);
     background-position: 500px -170px;
     background-size: initial;
     margin-left: auto;
@@ -140,9 +146,11 @@ html {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1300px) and (min-device-pixel-ratio: 2), screen and (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1300px) and (min-resolution: 192dpi), screen and (min-width: 1300px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url(..//images/header/pic-donuts@2x.png);
+    background-image: url(../images/header/pic-donuts@2x.png);
+    background-position: 500px -170px;
+    background-size: 790px 825px;
   }
 }
 
@@ -224,6 +232,12 @@ html {
   margin-left: 162px;
 }
 
+@media screen and (max-width: 1279px) {
+  .nav {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .nav {
     display: -webkit-box;
@@ -240,12 +254,6 @@ html {
   cursor: pointer;
   font-size: 18px;
   line-height: 1.22;
-}
-
-@media screen and (max-width: 1279px) {
-  .nav .nav__link {
-    display: none;
-  }
 }
 
 .nav .nav__item:not(:last-child) {
@@ -402,6 +410,23 @@ html {
     padding: 8px 44px;
     font-size: 24px;
     line-height: 1.25;
+  }
+}
+
+.hero-soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-soc {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1369,41 +1394,9 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 320px) {
-  .background-header {
-    background-image: url(../images/bg-mobile-top.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
-    z-index: 20;
-  }
-}
-
-@media screen and (max-width: 320px) and (min-device-pixel-ratio: 2), screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 320px) and (min-resolution: 192dpi), screen and (max-width: 320px) and (min-resolution: 2dppx) {
-  .background-header {
-    background-image: url(../images/bg-mobile-top@2x.png);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .background-header {
-    background-image: url(../images/bg-tablet-top.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
-    z-index: 20;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .background-header {
-    background-image: url(../images/bg-tablet-top@2x.png);
-  }
-}
-
 @media screen and (min-width: 1280px) {
   .background-header {
-    background-image: url(../images/about/spoon.png), url(../images/background-top.png);
+    background-image: url(../images/about/spoon.png);
     background-repeat: no-repeat;
     background-size: auto, 100%;
     background-position: 0 501px, top;
@@ -1413,59 +1406,32 @@ body {
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .background-header {
-    background-image: url(../images/about/spoon@2x.png), url(../images/background-top@2x.png);
+    background-image: url(../images/about/spoon@2x.png);
   }
 }
 
-.background-footer {
-  width: 100%;
-}
-
-@media screen and (min-width: 320px) {
-  .background-footer {
-    background-image: url(../images/bg-mobile-bottom.png);
-    background-repeat: no-repeat;
-    background-size: 100% 1337px;
-    background-position: top;
-    z-index: 20;
-  }
-}
-
-@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
-  .background-footer {
-    background-image: url(../images/bg-mobile-bottom@2x.png);
-  }
+body {
+  background-image: url("../images/bg-color/bg-top-mobile.svg"), url("../images/bg-color/bg-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom center;
+  background-size: 100% 14.5%, 100% 44.5%;
 }
 
 @media screen and (min-width: 768px) {
-  .background-footer {
-    background-image: url(../images/bg-tablet-bottom.png);
-    background-repeat: no-repeat;
-    background-size: 100% 1519px;
-    background-position: top;
-    z-index: 20;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .background-footer {
-    background-image: url(../images/bg-tablet-bottom@2x.png);
+  body {
+    background-image: url("../images/bg-color/bg-top-tablet.svg"), url("../images/bg-color/bg-bottom-tablet.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-size: 100% 25%, 100% 52.5%;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .background-footer {
-    background-image: url(../images/background-bottom.png);
-    background-repeat: no-repeat;
-    background-size: 100% 1861px;
-    background-position: top;
-    z-index: 20;
-  }
-}
-
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .background-footer {
-    background-image: url(../images/background-bottom@2x.png);
+  body {
+    background-image: url("../images/bg-color/bg-top-desktop.svg"), url("../images/bg-color/bg-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-size: 100% 29%, 100% 48.5%;
   }
 }
 
@@ -1878,6 +1844,12 @@ body {
   margin-bottom: 28px;
 }
 
+@media screen and (min-width: 768px) {
+  .registration__price {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .registration__price {
     font-size: 20px;
@@ -1924,7 +1896,7 @@ body {
     width: 180px;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    top: 87px;
+    top: 80px;
     left: -110px;
   }
 }
@@ -2072,16 +2044,22 @@ body {
   border-radius: 25px;
   background-color: var(--acent-color);
   cursor: pointer;
-  -webkit-transition: background-color, -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color, -webkit-box-shadow 250ms var(--cubic);
+  transition: background-color, -webkit-box-shadow 250ms var(--cubic);
+  transition: background-color, box-shadow 250ms var(--cubic);
+  transition: background-color, box-shadow 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
 }
 
 .form__button:hover {
   background-color: var(--hover-color);
-  -webkit-box-shadow: 0 10px 12px 0 rgba(122, 121, 121, 0.201), 0 17px 50px 0 rgba(140, 135, 135, 0.19);
-          box-shadow: 0 10px 12px 0 rgba(122, 121, 121, 0.201), 0 17px 50px 0 rgba(140, 135, 135, 0.19);
+  -webkit-box-shadow: var(--btn-box-shadow);
+          box-shadow: var(--btn-box-shadow);
+}
+
+.form__button:active {
+  background-color: var(--hover-color);
+  -webkit-box-shadow: var(--btn-box-shadow);
+          box-shadow: var(--btn-box-shadow);
 }
 
 @media screen and (min-width: 1280px) {
@@ -2424,7 +2402,7 @@ footer {
   position: absolute;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: var(--hover-color);
   content: '';
   -webkit-transition: width 0.3s ease-out;
